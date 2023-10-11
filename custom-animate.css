@@ -1,23 +1,49 @@
 .z-1 { z-index: 1; }
-
-.reveal{ position: relative; transform: translateY(150px); opacity: 0; transition: 1s all ease; }
-.reveal.active{ transform: translateY(0); opacity: 1; }
 .animate-hover-top:hover {transform: translateY(-15px);}
 .animate-hover-top {transition: all 0.3s ease-in-out;}
 
 .c-card__description { -webkit-transform: translateY(35px); transform: translateY(35px); -webkit-transition: opacity 0.3s, -webkit-transform 0.3s; transition: opacity 0.3s, -webkit-transform 0.3s; transition: opacity 0.3s, transform 0.3s; transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s; -webkit-transition-delay: 0s; transition-delay: 0s; }
 .c-card-custom:hover .c-card__description { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); -webkit-transition-delay: 0.2s; transition-delay: 0.2s; }
 
-.c-type { overflow: hidden; white-space: nowrap; animation-name: typing; animation-duration: 1s; animation-timing-function: steps(200, end); animation-iteration-count: 1; }
-.c-type:nth-child(1) { animation-delay: 0s; }
-.c-type:nth-child(2) { visibility: hidden; animation-delay: .8s; animation-fill-mode: forwards; }  
-@keyframes typing { from { width: 0; } to { width: 100%; visibility: visible; } }
+.typewriter { display: inline; color:#0000; background: linear-gradient(-90deg,#6C757D 3px,#0000 0) 3px 0, linear-gradient(#6C757D 0 0) 0 0; background-size:calc(var(--n)*1ch) 200%; -webkit-background-clip:padding-box,text; background-clip:padding-box,text; background-repeat:no-repeat; animation: blinkcursor .7s infinite steps(1), writetext calc(var(--n)*.1s) steps(var(--n)) infinite; }
+@keyframes writetext { from {background-size:0 200%} }
+@keyframes blinkcursor { 50% {background-position:0 -100%,0 0} }
 
 .c-mv__line { opacity: .2;}
 .c-mv__line #line { fill: none; stroke: #e00000; stroke-width: 1.5; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: 1; stroke-dashoffset: 1; animation: dash 5s linear infinite; }
 .c-mv__line #point { fill: none; stroke: #f00000; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: .1; stroke-opacity: 1; stroke-dasharray: .0001, .9999; stroke-dashoffset: 1; animation: dash 5s linear infinite; }
 
 @keyframes dash { 0% { stroke-dashoffset: 1; } 80% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 0; } }
+
+.hearts { width: 5%; min-width: 100px; height: 25%; min-height: 300px; position: absolute; z-index: 10; }
+.heart { background-color: #e14759; position: absolute; height: 20%; min-height: 15px; width: 20%; min-width: 15px; opacity: 0; -webkit-mask-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>'); mask-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>'); -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: bottom; mask-position: bottom; animation: floating-heart 10s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5); }
+.heart:nth-child(1) { animation-delay: 1s; }
+.heart:nth-child(2) { animation-delay: 2.5s; }
+.heart:nth-child(3) { animation-delay: 3.5s; }
+.heart:nth-child(4) { animation-delay: 4.5s; }  
+@keyframes floating-heart { 0% { opacity: 0; bottom: 0%; left: 0%; } 10% { opacity: 1; bottom: 20%; left: 70%; } 20% { bottom: 40%; left: 10%; } 30% { bottom: 60%; left: 50%; } 40% { opacity: 1; bottom: 80%; left: 5%; } 48% { opacity: 0; bottom: 100%; left: 60%; } 100% { opacity: 0; bottom: 100%; left: 90%; } }
+
+bokeh {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation-name: explosion;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: cubic-bezier(0.84, 0.02, 1, 1);
+  }
+  @keyframes explosion {
+    0% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(50vw, 100vh);
+    }
+  }
 
 .c-mv__back { height: 100%; pointer-events: none; }  
 .c-mv__back * { -moz-transition: all 1s ease; -o-transition: all 1s ease; -webkit-transition: all 1s ease; transition: all 1s ease; }
