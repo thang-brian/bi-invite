@@ -23,27 +23,16 @@
 .heart:nth-child(4) { animation-delay: 4.5s; }  
 @keyframes floating-heart { 0% { opacity: 0; bottom: 0%; left: 0%; } 10% { opacity: 1; bottom: 20%; left: 70%; } 20% { bottom: 40%; left: 10%; } 30% { bottom: 60%; left: 50%; } 40% { opacity: 1; bottom: 80%; left: 5%; } 48% { opacity: 0; bottom: 100%; left: 60%; } 100% { opacity: 0; bottom: 100%; left: 90%; } }
 
-bokeh {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    animation-name: explosion;
-    animation-iteration-count: infinite;
-    animation-direction: reverse;
-    animation-timing-function: cubic-bezier(0.84, 0.02, 1, 1);
-  }
-  @keyframes explosion {
-    0% {
-      opacity: 0;
-    }
-    70% {
-      opacity: 1;
-    }
-    100% {
-      transform: translate(50vw, 100vh);
-    }
-  }
+bokeh { position: absolute; width: 10px; height: 10px; border-radius: 50%; animation-name: explosion; animation-iteration-count: infinite; animation-direction: reverse; animation-timing-function: cubic-bezier(0.84, 0.02, 1, 1); }
+@keyframes explosion { 0% { opacity: 0; } 70% { opacity: 1; } 100% { transform: translate(50vw, 100vh); } }
+
+.confetti { position: absolute; z-index: 999; }  
+.confetti .rotate { -webkit-animation: driftRotate 1s infinite both ease-in-out; animation: driftRotate 1s infinite both ease-in-out; width: 100%; height: 100%; }
+.confetti .askew { width: 100%; height: 100%; -webkit-animation: drift 1s infinite alternate both ease-in-out; animation: drift 1s infinite alternate both ease-in-out; }
+@-webkit-keyframes drift { 0% { transform: skewY(10deg) translate3d(-250%, 0, 0); } 100% { transform: skewY(-10deg) translate3d(250%, 0, 0); } }  
+@keyframes drift { 0% { transform: skewY(10deg) translate3d(-250%, 0, 0); } 100% { transform: skewY(-10deg) translate3d(250%, 0, 0); } }
+@-webkit-keyframes driftRotate { 0% { transform: rotateX(0); } 100% { transform: rotateX(360deg); } }
+@keyframes driftRotate { 0% { transform: rotateX(0); } 100% { transform: rotateX(360deg); } }
 
 .c-mv__back { height: 100%; pointer-events: none; }  
 .c-mv__back * { -moz-transition: all 1s ease; -o-transition: all 1s ease; -webkit-transition: all 1s ease; transition: all 1s ease; }
@@ -51,6 +40,11 @@ bokeh {
 .midground { background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/21555/midground.png) repeat 20% 20%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; animation: STAR-MOVE 150s linear infinite; }  
 .foreground { background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/21555/foreground.png) repeat 35% 35%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; animation: STAR-MOVE 100s linear infinite; }
 @-webkit-keyframes STAR-MOVE { from { background-position: 5% 5%; } to { background-position: -1300% 0%; } }
+
+.candle { height: 35px; width: 12px; top: 280px; margin: auto 5px; background: linear-gradient(90deg, rgba(230,231,233,1) 0%, rgba(227,198,202,1) 35%, rgba(236,181,195,1) 100%);; border-radius: 4px; transform: translateZ(120px); }
+#flame { position: absolute; z-index: 10; }
+.lit { background: linear-gradient(to bottom, #FFF6D9, #FBC36C); width: 15px; height: 30px; border-top-left-radius: 10px 35px; border-top-right-radius: 10px 35px; border-bottom-right-radius: 10px 10px; border-bottom-left-radius: 10px 10px; top: -30px; margin: auto; box-shadow: 0 0 17px 7px rgba(251, 246, 190, 0.71); transform-origin: bottom; animation: flicker 1s ease-in-out alternate infinite; }
+@keyframes flicker { 0% { transform: skewX(5deg); box-shadow: 0 0 17px 10px rgba(251, 246, 190, 0.71); } 25% { transform: skewX(-5deg); box-shadow: 0 0 17px 5px rgba(251, 246, 190, 0.71); } 50% { transform: skewX(10deg); box-shadow: 0 0 17px 7px rgba(251, 246, 190, 0.71); } 75% { transform: skewX(-10deg); box-shadow: 0 0 17px 5px rgba(251, 246, 190, 0.71); } 100% { transform: skewX(5deg); box-shadow: 0 0 17px 10px rgba(251, 246, 190, 0.71); } }
 
 .float-animation { transform-origin: bottom center; animation: float 5s ease-in infinite alternate; }
 @keyframes float { 0% { transform: translate(0, 0); } 50% { transform: translate(-15px, -15px) rotate(4deg); } 100% { transform: translate(15px, 15px) rotate(-6deg); } }
