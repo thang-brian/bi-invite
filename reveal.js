@@ -1,5 +1,5 @@
 const confettiShower = [];
-const numConfettis = 200;
+const numConfettis = 120;
 const container = document.querySelector(".c-confetti-area");
 const colors = [ "#f2abe7", "#9fa3ec", "#86d2e1 ", "#fec31e "];
 class Confetti {

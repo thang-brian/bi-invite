@@ -48,38 +48,33 @@
     	<img src="https://biihappy.com/static/img/logo/logo-st.svg" width="42" height="auto" alt="Biihappy" class="d-inline"/>
     </div>
 </div>
-<header id="header" class="header">
+<nav class="navbar navbar-expand-lg navbar-light px-0 py-3 sticky-top bg-transparent">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="header-wrap">
-                    <div id="logo" class="logo">
-                        <a href="/invitepro">
-                            <img width="169" height="53" src="https://biihappy.com/static/theme/img/invitepro/logo.png" alt="iWedding by Biihappy" />
-                        </a>
-                    </div>
-                    <div class="nav-wrap">
-                        <nav id="mainnav" class="mainnav align-items-center" role="navigation">
-                            <ul id="menu-primary-menu" class="menu">
-                                <li class="menu-item"><a class="page-scroll text-uppercase fs-6" href="/invitepro/category/thiep-thoi-noi">Thiệp thôi nôi</a></li>
-                                <li class="menu-item"><a class="page-scroll text-uppercase fs-6" href="/invitepro/category/thiep-cuoi">Thiệp cưới</a></li>
-                                <li class="menu-item"><a class="page-scroll text-uppercase fs-6" href="/invitepro/category/thiep-sinh-nhat">Thiệp Sinh Nhật</a></li>
-                            </ul>
-                        </nav>
-                        <div class="user-btns">
-                        				            		<a class="btn_signin" href="/user/register?back=L2ludml0ZXBybw%3D%3D">Đăng ký</a> / <a class="btn_login" href="/user/login?back=L2ludml0ZXBybw%3D%3D">Đăng nhập</a>
-			            	                        </div>
-                        <div class="btn-menu d-block d-lg-none">
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
+        <a class="navbar-brand" href="/invitepro">
+            <img width="169" height="53" src="https://biihappy.com/static/theme/img/invitepro/logo.png" class="h-8" alt="iWedding by Biihappy" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-lg-auto">
+                <a class="nav-item nav-link" href="/invitepro/category/thiep-thoi-noi">Thiệp thôi nôi</a>
+                <a class="nav-item nav-link" href="/invitepro/category/thiep-cuoi">Thiệp cưới</a>
+                <a class="nav-item nav-link" href="/invitepro/category/thiep-sinh-nhat">Thiệp Sinh Nhật</a>
+            </div>
+            <div class="navbar-nav ms-lg-4">
+                <a class="nav-item nav-link" href="/user/login?back=L2ludml0ZXBybw%3D%3D">Đăng nhập</a>
+            </div>
+            <div class="d-flex align-items-lg-center mt-3 mt-lg-0">
+                <a href="/user/register?back=L2ludml0ZXBybw%3D%3D" class="btn btn-sm btn-danger w-full w-lg-auto">
+                Đăng ký 
+                </a>
             </div>
         </div>
     </div>
-</header>
-<main>
-	<style>
+</nav>
+<main class="p-0">
+<style>
 .row {max-width: 1170px;margin: 0 auto;}
 main:before {
   content: "";
