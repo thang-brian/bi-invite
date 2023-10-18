@@ -5,15 +5,11 @@
 .nav-item:hover:after{ bottom: 0; opacity: 1; }
 .nav-item.active:hover:after{ opacity: 0; }
 .nav-link:hover{ color: #DF3367 !important; }
-.animate-hover-top:hover {transform: translateY(-15px);}
-.animate-hover-top {transition: all 0.3s ease-in-out;}
+/* .animate-hover-top:hover {transform: translateY(-15px);}
+.animate-hover-top {transition: all 0.3s ease-in-out;} */
 
 .c-card__description { -webkit-transform: translateY(35px); transform: translateY(35px); -webkit-transition: opacity 0.3s, -webkit-transform 0.3s; transition: opacity 0.3s, -webkit-transform 0.3s; transition: opacity 0.3s, transform 0.3s; transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s; -webkit-transition-delay: 0s; transition-delay: 0s; }
 .c-card-custom:hover .c-card__description { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); -webkit-transition-delay: 0.2s; transition-delay: 0.2s; }
-
-.typewriter { display: inline; color:#0000; background: linear-gradient(-90deg,#6C757D 3px,#0000 0) 3px 0, linear-gradient(#6C757D 0 0) 0 0; background-size:calc(var(--n)*1ch) 200%; -webkit-background-clip:padding-box,text; background-clip:padding-box,text; background-repeat:no-repeat; animation: blinkcursor .7s infinite steps(1), writetext calc(var(--n)*.1s) steps(var(--n)) infinite; }
-@keyframes writetext { from {background-size:0 200%} }
-@keyframes blinkcursor { 50% {background-position:0 -100%,0 0} }
 
 .c-mv__line { opacity: .2;}
 .c-mv__line #line { fill: none; stroke: #e00000; stroke-width: 1.5; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: 1; stroke-dashoffset: 1; animation: dash 5s linear infinite; }
