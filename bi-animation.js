@@ -2,6 +2,8 @@ const confettiShower = [];
 const numConfettis = 50;
 const container = document.querySelector(".c-confetti-area");
 const colors = [ "#f2abe7", "#9fa3ec", "#86d2e1 ", "#fec31e "];
+const steps = document.querySelectorAll('.c-print__step');
+let currentStepIndex = 0;
 class Confetti {
   constructor(x, y, w, h, c) {
     this.w = Math.floor(Math.random() * 10 + 5);
@@ -48,10 +50,16 @@ var AnimationModule = (function () {
       confettiShower.push(animated);
     }
   }
+  function changeColor() {
+      steps[currentStepIndex].classList.remove('active');
+      currentStepIndex = (currentStepIndex + 1) % steps.length;
+      steps[currentStepIndex].classList.add('active');
+  }
   window.addEventListener("scroll", initialize);
   window.addEventListener("load", initialize);
   document.addEventListener("DOMContentLoaded", function () {
     animateConfetti();
+    setInterval(changeColor, 3000);
   });
   return { initialize: initialize };
 })();
