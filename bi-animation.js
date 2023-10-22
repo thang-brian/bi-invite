@@ -61,10 +61,10 @@ var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
-  this.period = parseInt(period, 10) || 4000;
+  this.period = parseInt(period, 10) || 2000; // Thay đổi khoảng thời gian đợi thành 2 giây (2000ms)
   this.txt = '';
+  this.isTyping = false; // Thêm biến kiểm tra xem đang gõ chữ hay không
   this.tick();
-  this.isDeleting = false;
   this.cursorVisible = true;
   this.toggleCursor();
 };
@@ -73,30 +73,27 @@ TxtType.prototype.tick = function() {
   var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
 
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  if (!this.isTyping) {
+    this.txt = ''; // Bắt đầu gõ từ đầu
+    this.isTyping = true;
   }
 
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  this.txt += fullTxt.charAt(this.txt.length); // Gõ từng ký tự một
+
+  this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
   var that = this;
-  var delta = 50 - Math.random() * 50;
-  if (this.isDeleting) { delta = 150 - Math.random() * 200; } 
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
+  if (this.txt === fullTxt) {
+    this.isTyping = false; // Dừng gõ khi hoàn thành
+    setTimeout(function() {
+      that.loopNum++;
+      that.tick();
+    }, this.period);
+  } else {
+    setTimeout(function() {
+      that.tick();
+    }, 50); // Thời gian mỗi ký tự được gõ (có thể thay đổi theo ý muốn)
   }
-
-  setTimeout(function() {
-    that.tick();
-  }, delta);
 };
 
 TxtType.prototype.toggleCursor = function() {
@@ -109,15 +106,16 @@ TxtType.prototype.toggleCursor = function() {
 
 window.onload = function() {
   var elements = document.getElementsByClassName('typewrite');
-  for (var i=0; i<elements.length; i++) {
-      var toRotate = elements[i].getAttribute('data-type');
-      var period = elements[i].getAttribute('data-period');
-      if (toRotate) {
-        new TxtType(elements[i], JSON.parse(toRotate), period);
-      }
+  for (var i = 0; i < elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-type');
+    var period = elements[i].getAttribute('data-period'); // Thay đổi data-period
+    if (toRotate) {
+      new TxtType(elements[i], JSON.parse(toRotate), period);
+    }
   }
   var css = document.createElement("style");
   css.type = "text/css";
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #6C757D}";
   document.body.appendChild(css);
 };
+
