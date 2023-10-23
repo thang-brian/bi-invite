@@ -4,6 +4,7 @@ const container = document.querySelector(".c-confetti-area");
 const colors = [ "#f2abe7", "#9fa3ec", "#86d2e1 ", "#fec31e "];
 const steps = document.querySelectorAll('.c-print__step');
 let currentStepIndex = 0;
+let arrived = false;
 class Confetti {
   constructor(x, y, w, h, c) {
     this.w = Math.floor(Math.random() * 10 + 5);
@@ -53,7 +54,16 @@ var AnimationModule = (function () {
   function changeColor() {
       steps[currentStepIndex].classList.remove('active');
       currentStepIndex = (currentStepIndex + 1) % steps.length;
+      if (currentStepIndex == 0) {
+          steps.forEach(step => {
+              step.classList.remove('arrived');
+          });
+      } else {
+        steps[currentStepIndex].classList.add('arrived');
+      }
+      steps[currentStepIndex].classList.add('arrived');
       steps[currentStepIndex].classList.add('active');
+      console.log(currentStepIndex);
   }
   window.addEventListener("scroll", initialize);
   window.addEventListener("load", initialize);
@@ -69,9 +79,9 @@ var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000; // Thay đổi khoảng thời gian đợi thành 2 giây (2000ms)
+  this.period = parseInt(period, 10) || 2000; 
   this.txt = '';
-  this.isTyping = false; // Thêm biến kiểm tra xem đang gõ chữ hay không
+  this.isTyping = false;
   this.tick();
   this.cursorVisible = true;
   this.toggleCursor();
@@ -82,17 +92,17 @@ TxtType.prototype.tick = function() {
   var fullTxt = this.toRotate[i];
 
   if (!this.isTyping) {
-    this.txt = ''; // Bắt đầu gõ từ đầu
+    this.txt = ''; 
     this.isTyping = true;
   }
 
-  this.txt += fullTxt.charAt(this.txt.length); // Gõ từng ký tự một
+  this.txt += fullTxt.charAt(this.txt.length); 
 
   this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
   var that = this;
   if (this.txt === fullTxt) {
-    this.isTyping = false; // Dừng gõ khi hoàn thành
+    this.isTyping = false; 
     setTimeout(function() {
       that.loopNum++;
       that.tick();
@@ -100,7 +110,7 @@ TxtType.prototype.tick = function() {
   } else {
     setTimeout(function() {
       that.tick();
-    }, 50); // Thời gian mỗi ký tự được gõ (có thể thay đổi theo ý muốn)
+    }, 25); 
   }
 };
 
@@ -116,7 +126,7 @@ window.onload = function() {
   var elements = document.getElementsByClassName('typewrite');
   for (var i = 0; i < elements.length; i++) {
     var toRotate = elements[i].getAttribute('data-type');
-    var period = elements[i].getAttribute('data-period'); // Thay đổi data-period
+    var period = elements[i].getAttribute('data-period'); 
     if (toRotate) {
       new TxtType(elements[i], JSON.parse(toRotate), period);
     }

@@ -2,12 +2,16 @@
   
   .box-snake::before {
     color: gray !important;
+    transition: all 0.3s ease-in-out;
   }
   .box-snake.active {
     overflow: hidden;
   }
   .box-snake.active::before  {
     color:#0D20C6 !important;
+  }
+  .box-snake.arrived::before {
+    color: #0D20C6 !important;
   }
   .box-snake.active span {
     position: absolute;
