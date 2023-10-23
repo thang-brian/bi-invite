@@ -63,7 +63,6 @@ var AnimationModule = (function () {
       }
       steps[currentStepIndex].classList.add('arrived');
       steps[currentStepIndex].classList.add('active');
-      console.log(currentStepIndex);
   }
   window.addEventListener("scroll", initialize);
   window.addEventListener("load", initialize);
