@@ -68,11 +68,13 @@ bokeh { position: absolute; width: 10px; height: 10px; border-radius: 50%; anima
 .tilt-in-fwd-br{-webkit-animation:tilt-in-fwd-br 1s cubic-bezier(.25,.46,.45,.94) both;animation:tilt-in-fwd-br 1s cubic-bezier(.25,.46,.45,.94) both}
 @-webkit-keyframes tilt-in-fwd-br{0%{-webkit-transform:rotateY(20deg) rotateX(-35deg) translate(300px,300px) skew(35deg,-10deg);transform:rotateY(20deg) rotateX(-35deg) translate(300px,300px) skew(35deg,-10deg);opacity:0}100%{-webkit-transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);opacity:1}}@keyframes tilt-in-fwd-br{0%{-webkit-transform:rotateY(20deg) rotateX(-35deg) translate(300px,300px) skew(35deg,-10deg);transform:rotateY(20deg) rotateX(-35deg) translate(300px,300px) skew(35deg,-10deg);opacity:0}100%{-webkit-transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);opacity:1}}
 
-.heart-line { color: #ECA1B7; display: inline-block; animation-name: heart; animation-duration: 0.75s; animation-iteration-count: infinite; transform: rotate(-0.05turn);}
-@keyframes heart { 0% { font-size: 52px; } 50% { font-size: 70px; } 100% { font-size: 52px; } }
-
 .love { animation: scale-easeOutBounce 5s infinite alternate; transform-origin: center; }
 @keyframes scale-easeOutBounce { 0% { transform: scale(1); } 12% { transform: scale(0.99); } 24% { transform: scale(0.96); } 36% { transform: scale(0.92); } 54% { transform: scale(1); } 74% { transform: scale(0.96); } 82% { transform: scale(0.99); } 92% { transform: scale(1); } 96% { transform: scale(0.96); } 100% { transform: scale(1); } }
+
+.love-r path { animation: heartbeat 1s ease-in-out infinite; }
+.love-r path:nth-child(2) { animation-delay: 0.5s; }
+.love-r path:nth-child(3) { animation-delay: 1s; }
+@keyframes heartbeat { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
 
 @media only screen and (max-width: 991px) {
     .typewrite {height: 30px}

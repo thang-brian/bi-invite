@@ -109,7 +109,7 @@ TxtType.prototype.tick = function() {
   } else {
     setTimeout(function() {
       that.tick();
-    }, 25); 
+    }, 12); 
   }
 };
 
