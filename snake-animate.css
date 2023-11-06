@@ -1,7 +1,7 @@
 
   
   .box-snake::before {
-    color: gray !important;
+    color: white !important;
     transition: all 0.3s ease-in-out;
   }
   .box-snake.active {

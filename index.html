@@ -37,6 +37,7 @@
 <link rel="stylesheet" href="https://test.biihappy.com/static/theme/css/libs.css?v=20230502">
 <link rel="stylesheet" href="https://test.biihappy.com/static/theme/css/style.css?v=20230910">
 <link rel="stylesheet" href="./custom-animate.css?v=2" />
+<link rel="stylesheet" href="./gradient.css" />
 <link rel="stylesheet" href="./balloon.css" />
 <link rel="stylesheet" href="./snake-animate.css" />
 <script defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4639759901640537" crossorigin="anonymous"></script>
@@ -50,7 +51,7 @@
     	<img src="https://test.biihappy.com/static/img/logo/logo-st.svg" width="42" height="auto" alt="Biihappy" class="d-inline"/>
     </div>
 </div>
-<nav class="navbar navbar-expand-lg navbar-light px-0 py-3 sticky-top bg-transparent">
+<nav class="navbar navbar-expand-lg navbar-light px-0 py-3 sticky-top main-gradient">
     <div class="container">
         <a class="navbar-brand" href="/invitepro">
             <img width="169" height="53" src="https://test.biihappy.com/static/theme/img/invitepro/logo.png" class="h-8" alt="iWedding by Biihappy" />
@@ -60,22 +61,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-lg-auto">
-                <a class="nav-item nav-link" href="/invitepro/category/thiep-thoi-noi">Thiệp thôi nôi</a>
-                <a class="nav-item nav-link" href="/invitepro/category/thiep-cuoi">Thiệp cưới</a>
-                <a class="nav-item nav-link" href="/invitepro/category/thiep-sinh-nhat">Thiệp Sinh Nhật</a>
+                <a class="nav-item nav-link text-white" href="/invitepro/category/thiep-thoi-noi">Thiệp thôi nôi</a>
+                <a class="nav-item nav-link text-white" href="/invitepro/category/thiep-cuoi">Thiệp cưới</a>
+                <a class="nav-item nav-link text-white" href="/invitepro/category/thiep-sinh-nhat">Thiệp Sinh Nhật</a>
             </div>
             <div class="navbar-nav ms-lg-4">
-                <a class="nav-item nav-link" href="/user/login?back=L2ludml0ZXBybw%3D%3D">Đăng nhập</a>
+                <a class="nav-item nav-link text-white" href="/user/login?back=L2ludml0ZXBybw%3D%3D">Đăng nhập</a>
             </div>
             <div class="d-flex align-items-lg-center mt-3 mt-lg-0">
-                <a href="/user/register?back=L2ludml0ZXBybw%3D%3D" class="btn btn-sm btn-danger w-full w-lg-auto">
+                <a href="/user/register?back=L2ludml0ZXBybw%3D%3D" class="btn btn-sm btn-radial-gradient w-full w-lg-auto">
                 Đăng ký 
                 </a>
             </div>
         </div>
     </div>
 </nav>
-<main class="p-0 c-confetti-area">
+<main class="p-0 pt-4">
 <style>
 .row {max-width: 1170px;margin: 0 auto;}
 main:before {
@@ -84,7 +85,6 @@ main:before {
   top: 20px;
   border-radius: 0px 0px 110px 110px;
   opacity: 0.2;
-  background: linear-gradient(180deg, #FFF 0%, #F9A5B9 100%);
   width: 100%;
   height: 1776px;
   z-index: -1;
@@ -100,19 +100,19 @@ main:before {
 </div>
 
 <section class="c-mv">
-    <div class="c-mv__container col-md-12 position-relative z-10">
+    <div class="c-mv__container col-md-12 position-relative z-10 box-wrapper">
         <div class="c-mv__text">
-            <h2 class="c-mv__title">
+            <h2 class="c-mv__title dynamic-text">
                 thiết kế thiệp <br />
                 theo cách riêng của bạn?
             </h2>
-            <p class="typewrite" data-type='[ "Cuộc sống là chuỗi sự kiện, hãy bắt đầu nó bằng những tấm thiệp hoàn hảo" ]'>
+            <p class="typewrite main-font-custom text-white" data-type='[ "Cuộc sống là chuỗi sự kiện, hãy bắt đầu nó bằng những tấm thiệp hoàn hảo" ]'>
                 <span class="wrap"></span>
             </p>
         </div>
         <div class="c-mv__image z-10">
             <figure class="c-mv__back">
-                <div class='background'></div>
+                <div class='background main-gradient rounded'></div>
                 <div class='midground'></div>
                 <div class='foreground'></div>
                 <img class="main-img" src="https://test.biihappy.com/static/theme/img/invitepro/mainvisual.png" alt=" " />
@@ -133,27 +133,16 @@ main:before {
             </div>
         </div>
     </div>
-    <svg class="top-c-mv__line position-absolute bottom-0" xmlns="http://www.w3.org/2000/svg" id="svg5" version="1.1" viewBox="-5 -5 278 56">
-        <filter id="blur">
-            <feGaussianBlur stdDeviation="1.6" />
-        </filter>
-        <g id="layer1" transform="translate(29.1 -127.42)">
-            <path id="line" d="M-28.73 167.2c26.43 9.21 68.46-9.46 85.45-12.03 18.45-2.78 32.82 4.86 28.75 9.83-3.82 4.66-25.77-21.18-14.81-31.5 9.54-8.98 17.64 10.64 16.42 17.06-1.51-6.2 2.95-26.6 14.74-22.11 11.7 4.46-4.33 49.03-15.44 44.08-6.97-3.1 15.44-16.26 26.1-16 23.03.56 55.6 27.51 126.63 3.36" pathLength="1" />
-        </g>
-        <g id="layer2" transform="translate(29.1 -127.42)">
-            <path filter="url(#blur)" id="point" d="M-28.73 167.2c26.43 9.21 68.46-9.46 85.45-12.03 18.45-2.78 32.82 4.86 28.75 9.83-3.82 4.66-25.77-21.18-14.81-31.5 9.54-8.98 17.64 10.64 16.42 17.06-1.51-6.2 2.95-26.6 14.74-22.11 11.7 4.46-4.33 49.03-15.44 44.08-6.97-3.1 15.44-16.26 26.1-16 23.03.56 55.6 27.51 126.63 3.36" pathLength="1" />
-        </g>
-    </svg>
 </section>
 
 <section class="c-people">
     <div class="row justify-content-center">
-        <div class="c-people__container">
+        <div class="c-people__container bg-hls">
             <div class="section_title center">
-                <div class="section_title--mid">
+                <div class="section_title--mid main-font-custom dynamic-text">
                     LAN TOẢ NIỀM VUI CỦA BẠN ĐẾN MỌI NGƯỜI
                 </div>
-                <p>Dễ dàng tạo thiệp mời kho mẫu thiệp cưới sẵn có</p>
+                <p class="text-white">Dễ dàng tạo thiệp mời kho mẫu thiệp cưới sẵn có</p>
             </div>
             <div class="c-people__list">
                 <div class="c-people__item download">
@@ -161,28 +150,28 @@ main:before {
                         <img src="https://test.biihappy.com/static/theme/img/invitepro/ico_download.png" alt=" " />
                     </span>
                     <div class="c-people__item--ttl">Tải xuống</div>
-                    <p>Nhận file mẫu thiệp mời và lưu trữ ở thiết bị của bạn</p>
+                    <p class="text-white">Nhận file mẫu thiệp mời và lưu trữ ở thiết bị của bạn</p>
                 </div>
                 <div class="c-people__item print">
                     <span class="-ico">
                         <img src="https://test.biihappy.com/static/theme/img/invitepro/ico_print.png" alt=" " />
                     </span>
                     <div class="c-people__item--ttl">In</div>
-                    <p>Tải xuống bản PDF chất lượng cao, in ấn tại nhà hoặc để chúng tôi in</p>
+                    <p class="text-white">Tải xuống bản PDF chất lượng cao, in ấn tại nhà hoặc để chúng tôi in</p>
                 </div>
                 <div class="c-people__item share">
                     <span class="-ico">
                         <img src="https://test.biihappy.com/static/theme/img/invitepro/ico_share.png" alt=" " />
                     </span>
                     <div class="c-people__item--ttl">Chia sẻ</div>
-                    <p>Chia sẻ trên mạng xã hội, SMS hoặc bằng mail cho tất cả mọi người</p>
+                    <p class="text-white">Chia sẻ trên mạng xã hội, SMS hoặc bằng mail cho tất cả mọi người</p>
                 </div>
                 <div class="c-people__item list">
                     <span class="-ico">
                         <img src="https://test.biihappy.com/static/theme/img/invitepro/ico_list.png" alt=" " />
                     </span>
                     <div class="c-people__item--ttl">Quản lý</div>
-                    <p>Tạo trang thiệp mời trực tuyến và thu thập phản hồi, lời chúc của mọi người</p>
+                    <p class="text-white">Tạo trang thiệp mời trực tuyến và thu thập phản hồi, lời chúc của mọi người</p>
                 </div>
             </div>
         </div>
@@ -195,21 +184,21 @@ main:before {
             <img src="https://test.biihappy.com/static/theme/img/invitepro/deco01.svg" alt="" />
         </div>
         <div class="section_title center">
-            <div class="section_title--mid">
+            <div class="section_title--mid main-font-custom dynamic-text">
                 Kho mẫu thiệp mời theo danh mục
                 Tạo thiệp của bạn từ kho 
             </div>
-            <p>Tất tần tật mẫu thiệp mời bạn cần ở đây</p>
+            <p class="text-white">Tất tần tật mẫu thiệp mời bạn cần ở đây</p>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
             <div class="c-pattern__item big position-relative">
                 <div class="c-pattern__item--ctn">
-                    <h5 class="c-pattern__item--ttl">
+                    <h5 class="c-pattern__item--ttl main-font-custom dynamic-text">
                         Thiệp cưới
                     </h5>
-                    <p>Khoảnh khắc <strong>ngọt ngào</strong> của <strong>đôi lứa</strong></p>
+                    <p class="text-white">Khoảnh khắc <strong>ngọt ngào</strong> của <strong>đôi lứa</strong></p>
                     <a href="/invitepro/category/thiep-cuoi" class="btn-start">Bắt đầu tạo thiệp</a>
                 </div>
                 <figure>
@@ -232,13 +221,13 @@ main:before {
         <div class="col-lg-6">
             <div class="c-pattern__item sm01">
                 <div class="c-pattern__item--ctn">
-                    <h5 class="c-pattern__item--ttl d-flex">
+                    <h5 class="c-pattern__item--ttl d-flex main-font-custom dynamic-text">
                         Thiệp sinh nhật
                         <div class="candle">
                             <div id="flame" class="lit"></div>
-                         </div> 
+                        </div> 
                     </h5>
-                    <p>Tuổi mới, nhiều niềm vui mới</p>
+                    <p class="text-white">Tuổi mới, nhiều niềm vui mới</p>
                     <a href="/invitepro/category/thiep-sinh-nhat" class="btn-start">Bắt đầu tạo thiệp</a>
                 </div>
             </div>
@@ -246,10 +235,10 @@ main:before {
         <div class="col-lg-6">
             <div class="c-pattern__item position-relative sm02">
                 <div class="c-pattern__item--ctn z-1">
-                    <h5 class="c-pattern__item--ttl d-flex">
+                    <h5 class="c-pattern__item--ttl d-flex main-font-custom dynamic-text">
                         Thiệp thôi nôi
                     </h5>
-                    <p>Thiên thần nhỏ đáng yêu</p>
+                    <p class="text-white">Thiên thần nhỏ đáng yêu</p>
                     <a href="/invitepro/category/thiep-thoi-noi" class="btn-start">Bắt đầu tạo thiệp</a>
                 </div>
                 <!-- <div class="pink-balloon"></div> -->
@@ -279,10 +268,10 @@ main:before {
         </div>
         <div class="col-md-12">
             <div class="section_title center">
-                <div class="section_title--mid">
+                <div class="section_title--mid main-font-custom dynamic-text">
                     thiệp mời trực tuyến
                 </div>
-                <p>Tạo thiệp mời Online nhanh chóng và thuận tiện với kho mẫu thiệp InvitePro</p>
+                <p class="text-white">Tạo thiệp mời Online nhanh chóng và thuận tiện với kho mẫu thiệp InvitePro</p>
             </div>
         </div>
         <div class="row align-items-md-center">
@@ -291,15 +280,15 @@ main:before {
                     <span class="-ico">
                         <img src="https://test.biihappy.com/static/theme/img/invitepro/ico_mail.png" alt="" />
                     </span>
-                    <h6>Dễ dàng mời những vị khách phương xa</h6>
-                    <p>qua Facebook, Email, Instagram, SMS</p>
+                    <h6 class="main-font-custom dynamic-text">Dễ dàng mời những vị khách phương xa</h6>
+                    <p class="text-white">qua Facebook, Email, Instagram, SMS</p>
                 </div>
                 <div class="c-invite__item -wow text-right">
                     <span class="-ico">
                         <img src="https://test.biihappy.com/static/theme/img/invitepro/ico_wow.png" alt="" />
                     </span>
-                    <h6>Gây ấn tượng với khách mời của bạn</h6>
-                    <p>trải nghiệm thiết kế dành riêng của bạn</p>
+                    <h6 class="main-font-custom dynamic-text">Gây ấn tượng với khách mời của bạn</h6>
+                    <p class="text-white">trải nghiệm thiết kế dành riêng của bạn</p>
                 </div>
             </div>
             <div class="col-md-6">
@@ -310,7 +299,7 @@ main:before {
                             <span class="-ico">
                                 <img src="https://test.biihappy.com/static/theme/img/invitepro/ico_play.png" alt="" />
                             </span>
-                            <span class="-txt">VIDEO HƯỚNG DẪN</span>
+                            <span class="-txt main-font-custom dynamic-text">VIDEO HƯỚNG DẪN</span>
                         </div>
                     </a>
                 </div>
@@ -320,15 +309,15 @@ main:before {
                     <span class="-ico">
                         <img src="https://test.biihappy.com/static/theme/img/invitepro/ico_people.png" alt="" />
                     </span>
-                    <h6>Quản lý được số lượng khách mời</h6>
-                    <p>xác nhận tham gia/không từ phía khách mời</p>
+                    <h6 class="main-font-custom dynamic-text">Quản lý được số lượng khách mời</h6>
+                    <p class="text-white">xác nhận tham gia/không từ phía khách mời</p>
                 </div>
                 <div class="c-invite__item -heart">
                     <span class="-ico">
                         <img src="https://test.biihappy.com/static/theme/img/invitepro/ico_heart.png" alt="" />
                     </span>
-                    <h6>Tận hưởng những tính năng bổ sung</h6>
-                    <p>quà mừng cưới, đăng ký quà tăng, v.v</p>
+                    <h6 class="main-font-custom dynamic-text">Tận hưởng những tính năng bổ sung</h6>
+                    <p class="text-white">quà mừng cưới, đăng ký quà tăng, v.v</p>
                 </div>
             </div>
         </div>
@@ -338,10 +327,10 @@ main:before {
 <section class="c-print">
     <div class="row">
         <div class="section_title center">
-            <div class="section_title--mid">
+            <div class="section_title--mid main-font-custom dynamic-text">
                 In ấn tiện lợi
             </div>
-            <p>
+            <p class="text-white">
                 Lựa chọn và kiểm tra chất lượng thiệp in trước khi in, hoàn tiền 100% <br />
                 nếu chất lượng không đúng cam kết
             </p>
@@ -350,20 +339,20 @@ main:before {
     <div class="row align-items-md-center">
         <div class="col-lg-6 flex-shrink-0">
             <div class="c-print__container pb-1">
-                <div class="c-print__step box-snake active arrived">
+                <div class="c-print__step box-snake active arrived bg-dark">
                     CHỌN<br />
                     MẪU THIỆP
                     <span></span><span></span><span></span><span></span>
                 </div>
-                <div class="c-print__step box-snake me-1">
+                <div class="c-print__step box-snake me-1 bg-dark">
                     CHỈNH SỬA
                     <span></span><span></span><span></span><span></span>
                 </div>
-                <div class="c-print__step box-snake">
+                <div class="c-print__step box-snake bg-dark">
                     ĐẶT IN
                     <span></span><span></span><span></span><span></span>
                 </div>
-                <div class="c-print__step box-snake me-1">
+                <div class="c-print__step box-snake me-1 bg-dark">
                     NHẬN THIỆP
                     <span></span><span></span><span></span><span></span>
                 </div>
@@ -378,7 +367,7 @@ main:before {
                             <img src="https://test.biihappy.com/static/theme/img/invitepro/ico_play.png" alt="" />
                         </span>
                     </div>
-                    <span class="-txt">
+                    <span class="-txt main-font-custom dynamic-text">
                         Xem sản phẩm<br />
                         thiệp in ấn<br />
                         của chúng tôi
@@ -387,7 +376,7 @@ main:before {
             </div>
         </div>
         <div class="col-md-12 position-relative">
-            <p class="-note">Lưu ý: Thời gian nhận thiệp sẽ tuỳ thuộc vào địa điểm nhận hàng, thông thường mất 7 -10 ngày (bao gồm 2-3 ngày in), không bao gồm thời gian phát sinh khác</p>
+            <p class="-note text-white">Lưu ý: Thời gian nhận thiệp sẽ tuỳ thuộc vào địa điểm nhận hàng, thông thường mất 7 -10 ngày (bao gồm 2-3 ngày in), không bao gồm thời gian phát sinh khác</p>
             <svg class="c-mv__line position-absolute bottom-0 w-400px end-0" xmlns="http://www.w3.org/2000/svg" id="svg5" version="1.1" viewBox="-5 -5 278 56">
                 <filter id="blur">
                     <feGaussianBlur stdDeviation="1.6" />
@@ -406,10 +395,10 @@ main:before {
 <section class="c-design">
     <div class="row">
         <div class="section_title center">
-            <div class="section_title--mid">
+            <div class="section_title--mid main-font-custom dynamic-text">
                 Tải xuống Bản thiết kế của bạn
             </div>
-            <p>InvitePro hỗ trợ bạn tải xuống bản thiết kế và đặt in nơi bạn mong muốn</p>
+            <p class="text-white">InvitePro hỗ trợ bạn tải xuống bản thiết kế và đặt in nơi bạn mong muốn</p>
         </div>
         <div class="c-design__movie b-movie center">
             <a href="#" class="popup-movie">
@@ -418,10 +407,10 @@ main:before {
                     <span class="-ico">
                         <img src="https://test.biihappy.com/static/theme/img/invitepro/ico_play.png" alt="" />
                     </span>
-                    <span class="-txt">VIDEO HƯỚNG DẪN</span>
+                    <span class="-txt main-font-custom dynamic-text">VIDEO HƯỚNG DẪN</span>
                 </div>
             </a>
-            <p>Lưu ý: InvitePro không giải quyết các vấn đề in/ấn ở địa điểm khác ngoài nhà cung cấp mà InvitePro gợi ý</p>
+            <p class="text-white">Lưu ý: InvitePro không giải quyết các vấn đề in/ấn ở địa điểm khác ngoài nhà cung cấp mà InvitePro gợi ý</p>
         </div>
     </div>
 </section>
@@ -429,103 +418,99 @@ main:before {
 <section class="c-card">
     <div class="row">
         <div class="section_title center">
-            <div class="section_title--mid">
+            <div class="section_title--mid main-font-custom dynamic-text">
                 Một số mẫu thiệp được LỰA CHỌN nhiều nhất
             </div>
         </div>
-        <!-- <div class="c-card__container"> -->
-                <div class="c-card-custom c-card__item col-lg-4 col-md-6 rounded">
+        <div class="c-card-custom c-card__item col-lg-4 col-md-6 rounded">
             <figure>
-                <img src="https://cdn.biihappy.com/ziiweb/editor/invitepro-template/651d8178d6f3cf65520c5231/e3f5a8205fe3a9285f2d73583d4da562.png" class="rounded" alt=" " />
+                <img src="https://cdn.biihappy.com/ziiweb/editor/invitepro-template/651d8178d6f3cf65520c5231/62231094c2c3d614290b3a3f4279a15c.png" class="rounded" alt=" " />
             </figure>
             <div class="c-card__description c-card__item--meta rounded align-items-center">
                 <a href="#" class="wacth m-1">XEM TRƯỚC</a>
                 <a href="/invitepro/new-design?template=651d8178d6f3cf65520c5231" target="_blank" class="create m-1">TẠO THIỆP MỜI</a>
             </div>
         </div>
-                <div class="c-card-custom c-card__item col-lg-4 col-md-6 rounded">
+        <div class="c-card-custom c-card__item col-lg-4 col-md-6 rounded">
             <figure>
-                <img src="https://cdn.biihappy.com/ziiweb/editor/invitepro-template/651d6cf35d423af91e007616/f5e691ee8d0f2d34d19df878b1f2bc93.png" class="rounded" alt=" " />
+                <img src="https://cdn.biihappy.com/ziiweb/editor/invitepro-template/651d8178d6f3cf65520c5231/62231094c2c3d614290b3a3f4279a15c.png" class="rounded" alt=" " />
             </figure>
             <div class="c-card__description c-card__item--meta rounded align-items-center">
                 <a href="#" class="wacth m-1">XEM TRƯỚC</a>
                 <a href="/invitepro/new-design?template=651d6cf35d423af91e007616" target="_blank" class="create m-1">TẠO THIỆP MỜI</a>
             </div>
         </div>
-                <div class="c-card-custom c-card__item col-lg-4 col-md-6 rounded">
+        <div class="c-card-custom c-card__item col-lg-4 col-md-6 rounded">
             <figure>
-                <img src="https://cdn.biihappy.com/ziiweb/editor/invitepro-template/651c3121587380a0240509d7/62dc81afc6063f92aee9af7a527c9555.png" class="rounded" alt=" " />
+                <img src="https://cdn.biihappy.com/ziiweb/editor/invitepro-template/651d8178d6f3cf65520c5231/62231094c2c3d614290b3a3f4279a15c.png" class="rounded" alt=" " />
             </figure>
             <div class="c-card__description c-card__item--meta rounded align-items-center">
                 <a href="#" class="wacth m-1">XEM TRƯỚC</a>
                 <a href="/invitepro/new-design?template=651c3121587380a0240509d7" target="_blank" class="create m-1">TẠO THIỆP MỜI</a>
             </div>
         </div>
-                <div class="c-card-custom c-card__item col-lg-4 col-md-6 rounded">
+        <div class="c-card-custom c-card__item col-lg-4 col-md-6 rounded">
             <figure>
-                <img src="https://cdn.biihappy.com/ziiweb/editor/invitepro-template/651c2d907870088ee0030bb2/48dd2091162a02c7ad31dd32ad2eff1a.png" class="rounded" alt=" " />
+                <img src="https://cdn.biihappy.com/ziiweb/editor/invitepro-template/651d8178d6f3cf65520c5231/62231094c2c3d614290b3a3f4279a15c.png" class="rounded" alt=" " />
             </figure>
             <div class="c-card__description c-card__item--meta rounded align-items-center">
                 <a href="#" class="wacth m-1">XEM TRƯỚC</a>
                 <a href="/invitepro/new-design?template=651c2d907870088ee0030bb2" target="_blank" class="create m-1">TẠO THIỆP MỜI</a>
             </div>
         </div>
-                <div class="c-card-custom c-card__item col-lg-4 col-md-6 rounded">
+        <div class="c-card-custom c-card__item col-lg-4 col-md-6 rounded">
             <figure>
-                <img src="https://cdn.biihappy.com/ziiweb/editor/invitepro-template/651c28809cef444cc70a5a05/4fd8cc1f6a9aaa4701fc6e47fd66e9fb.png" class="rounded" alt=" " />
+                <img src="https://cdn.biihappy.com/ziiweb/editor/invitepro-template/651d8178d6f3cf65520c5231/62231094c2c3d614290b3a3f4279a15c.png" class="rounded" alt=" " />
             </figure>
             <div class="c-card__description c-card__item--meta rounded align-items-center">
                 <a href="#" class="wacth m-1">XEM TRƯỚC</a>
                 <a href="/invitepro/new-design?template=651c28809cef444cc70a5a05" target="_blank" class="create m-1">TẠO THIỆP MỜI</a>
             </div>
         </div>
-                <div class="c-card-custom c-card__item col-lg-4 col-md-6 rounded">
+        <div class="c-card-custom c-card__item col-lg-4 col-md-6 rounded">
             <figure>
-                <img src="https://cdn.biihappy.com/ziiweb/editor/invitepro-template/651ad93056ce5230a20e78bd/5b715023fd777e99206aba6e284e02ef.png" class="rounded" alt=" " />
+                <img src="https://cdn.biihappy.com/ziiweb/editor/invitepro-template/651d8178d6f3cf65520c5231/62231094c2c3d614290b3a3f4279a15c.png" class="rounded" alt=" " />
             </figure>
             <div class="c-card__description c-card__item--meta rounded align-items-center">
                 <a href="#" class="wacth m-1">XEM TRƯỚC</a>
                 <a href="/invitepro/new-design?template=651ad93056ce5230a20e78bd" target="_blank" class="create m-1">TẠO THIỆP MỜI</a>
             </div>
         </div>
-                <div class="c-card-custom c-card__item col-lg-4 col-md-6 rounded">
+        <div class="c-card-custom c-card__item col-lg-4 col-md-6 rounded">
             <figure>
-                <img src="https://cdn.biihappy.com/ziiweb/editor/invitepro-template/651ad479e1b85942170bde61/5460bb34f50f27e91e1c205553c33d32.png" class="rounded" alt=" " />
+                <img src="https://cdn.biihappy.com/ziiweb/editor/invitepro-template/651d8178d6f3cf65520c5231/62231094c2c3d614290b3a3f4279a15c.png" class="rounded" alt=" " />
             </figure>
             <div class="c-card__description c-card__item--meta rounded align-items-center">
                 <a href="#" class="wacth m-1">XEM TRƯỚC</a>
                 <a href="/invitepro/new-design?template=651ad479e1b85942170bde61" target="_blank" class="create m-1">TẠO THIỆP MỜI</a>
             </div>
         </div>
-                <div class="c-card-custom c-card__item col-lg-4 col-md-6 rounded">
+        <div class="c-card-custom c-card__item col-lg-4 col-md-6 rounded">
             <figure>
-                <img src="https://cdn.biihappy.com/ziiweb/editor/invitepro-template/651997479c37f40105062063/87b0d26723a818c908830858968f7908.png" class="rounded" alt=" " />
+                <img src="https://cdn.biihappy.com/ziiweb/editor/invitepro-template/651d8178d6f3cf65520c5231/62231094c2c3d614290b3a3f4279a15c.png" class="rounded" alt=" " />
             </figure>
             <div class="c-card__description c-card__item--meta rounded align-items-center">
                 <a href="#" class="wacth m-1">XEM TRƯỚC</a>
                 <a href="/invitepro/new-design?template=651997479c37f40105062063" target="_blank" class="create m-1">TẠO THIỆP MỜI</a>
             </div>
         </div>
-                <div class="c-card-custom c-card__item col-lg-4 col-md-6 rounded">
+        <div class="c-card-custom c-card__item col-lg-4 col-md-6 rounded">
             <figure>
-                <img src="https://cdn.biihappy.com/ziiweb/editor/invitepro-template/651993f91d174943bd0e7280/c37ffcb193e8b75f09c389abfa3f6afd.png" class="rounded" alt=" " />
+                <img src="https://cdn.biihappy.com/ziiweb/editor/invitepro-template/651d8178d6f3cf65520c5231/62231094c2c3d614290b3a3f4279a15c.png" class="rounded" alt=" " />
             </figure>
             <div class="c-card__description c-card__item--meta rounded align-items-center">
                 <a href="#" class="wacth m-1">XEM TRƯỚC</a>
                 <a href="/invitepro/new-design?template=651993f91d174943bd0e7280" target="_blank" class="create m-1">TẠO THIỆP MỜI</a>
             </div>
         </div>
-            </div>
-    <!--<div class="col-md-12 text-center">-->
-    <!--    <a href="#" class="more">Xem thêm</a>-->
-    <!--</div>-->
+        </div>
 </section>
 
 <section id="qa" class="qa pt-120">
     <div class="row">
         <div class="col-md-12">
             <div class="section_title center">
-                <div class="section_title--mid">
+                <div class="section_title--mid main-font-custom dynamic-text">
                     GIÁI ĐÁP THĂC MẮC KHI GỬI/TẠO/IN THIỆP ONLINE
                 </div>
             </div>
@@ -535,36 +520,36 @@ main:before {
         <div class="col-md-12">
             <div id="accordion" class="accordion-container">
                 <article class="content-entry">
-                    <h4 class="article-title">Thời gian in và nhận thiệp bao lâu?</h4>
+                    <h4 class="article-title text-white">Thời gian in và nhận thiệp bao lâu?</h4>
                     <div class="accordion-content">
-                        <p>
+                        <p class="text-white">
                             Thời gian in và nhận thiệp sẽ tuỳ thuộc vào loại thiệp bạn chọn (giấy in, chi tiết trên thiệp, cách điệu thiệp, v.v) và địa điểm giao nhận thiệp. Thông thường bạn sẽ nhận được thiệp sau 7 -10 ngày đặt in.
                             Trong trường hợp, bạn cần in thiệp gấp, vui lòng liên hệ admin để được hỗ trợ:
                         </p>
                     </div>
                 </article>
                 <article class="content-entry">
-                    <h4 class="article-title">Làm thế nào để gửi thiệp điện tử qua email hoặc chia sẻ trên mạng xã hội?</h4>
+                    <h4 class="article-title text-white">Làm thế nào để gửi thiệp điện tử qua email hoặc chia sẻ trên mạng xã hội?</h4>
                     <div class="accordion-content">
-                        <p>Bạn có thể chia sẻ thiệp qua email hoặc mạng xã hội, SMS ngay khi vừa tạo thiệp xong. Bạn chỉ cần điền địa chỉ email hoặc chọn mạng xã hội bạn muốn chia sẻ và làm theo hướng dẫn.</p>
+                        <p class="text-white">Bạn có thể chia sẻ thiệp qua email hoặc mạng xã hội, SMS ngay khi vừa tạo thiệp xong. Bạn chỉ cần điền địa chỉ email hoặc chọn mạng xã hội bạn muốn chia sẻ và làm theo hướng dẫn.</p>
                     </div>
                 </article>
                 <article class="content-entry">
-                    <h4 class="article-title">Làm thế nào để lưu thiệp để sử dụng sau này?</h4>
+                    <h4 class="article-title text-white">Làm thế nào để lưu thiệp để sử dụng sau này?</h4>
                     <div class="accordion-content">
-                        <p>Để lưu thiệp, bạn cần tạo tài khoản trên trang web InvitePro. Sau đó, bạn có thể lưu các thiệp bạn đã tạo và truy cập chúng sau này để chỉnh sửa hoặc gửi đi.</p>
+                        <p class="text-white">Để lưu thiệp, bạn cần tạo tài khoản trên trang web InvitePro. Sau đó, bạn có thể lưu các thiệp bạn đã tạo và truy cập chúng sau này để chỉnh sửa hoặc gửi đi.</p>
                     </div>
                 </article>
                 <article class="content-entry">
-                    <h4 class="article-title">Làm thế nào để lưu thiệp để sử dụng sau này?</h4>
+                    <h4 class="article-title text-white">Làm thế nào để lưu thiệp để sử dụng sau này?</h4>
                     <div class="accordion-content">
-                        <p>Để lưu thiệp, bạn cần tạo tài khoản trên trang web InvitePro. Sau đó, bạn có thể lưu các thiệp bạn đã tạo và truy cập chúng sau này để chỉnh sửa hoặc gửi đi.</p>
+                        <p class="text-white">Để lưu thiệp, bạn cần tạo tài khoản trên trang web InvitePro. Sau đó, bạn có thể lưu các thiệp bạn đã tạo và truy cập chúng sau này để chỉnh sửa hoặc gửi đi.</p>
                     </div>
                 </article>
             </div>
         </div>
         <div class="col-md-12 text-center">
-            <a href="/iwedding" class="c-btn">
+            <a href="/iwedding" class="c-btn btn-radial-gradient">
                 Xem thêm Cách tạo website đám cưới với iWedding >>tại đây<<
             </a>
         </div>
@@ -573,16 +558,16 @@ main:before {
 </main>
 
 <footer class="footer-section">
-    <div class="footer-top gray-light-bg" style="background: #F5F8FB">
+    <div class="footer-top main-gradient" style="background: #F5F8FB">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-12">
-                    <div class="footer-nav-wrap text-black mb-0 mb-md-4 mb-lg-0 fs-6">
-                        <a class="d-block mb-3" href="/"><img src="https://test.biihappy.com/static/img/logo/logo-m.svg"x width="125" alt="Biihappy" class="img-fluid h-auto"><h2 class="ms-1 text-black fs-6 d-inline">Vì cuộc sống hạnh phúc!</h2></a>
+                    <div class="footer-nav-wrap text-white mb-0 mb-md-4 mb-lg-0 fs-6">
+                        <a class="d-block mb-3" href="/"><img src="https://test.biihappy.com/static/img/logo/logo-m.svg"x width="125" alt="Biihappy" class="img-fluid h-auto"><h2 class="ms-1 text-white fs-6 d-inline">Vì cuộc sống hạnh phúc!</h2></a>
                         <p class="mb-2">CÔNG TY TNHH BIIHAPPY</p>
                         <p class="mb-2">Mã số doanh nghiệp: 0402189027 cấp ngày 18/04/2023 tại Sở Kế Hoạch và Đầu tư Thành phố Đà Nẵng</p>
-                        <p class="mb-2"><i class="bi bi-telephone"></i> <a class="text-black" href="tel:0906521623">0906.521.623</a></p>
-                        <p class="mb-3"><i class="bi bi-envelope"></i> <a class="text-black" href="email:info@biihappy.com">info@biihappy.com</a></p>
+                        <p class="mb-2"><i class="bi bi-telephone"></i> <a class="text-white" href="tel:0906521623">0906.521.623</a></p>
+                        <p class="mb-3"><i class="bi bi-envelope"></i> <a class="text-white" href="email:info@biihappy.com">info@biihappy.com</a></p>
 
                         <ul class="list-unstyled social-list mb-0">
                             <li class="list-inline-item"><a data-bs-toggle="tooltip" title="Biihappy trên Facebook" href="https://www.facebook.com/biihappy.life" target="_blank" class="rounded"><span class="d-block ti-facebook bg-color-2 text-white shadow rounded-circle"></span></a></li>
@@ -593,8 +578,8 @@ main:before {
                 </div>
 
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="footer-nav-wrap text-black">
-                        <div class="text-black fs-4 fw-bold font-family-2">Liên kết</div>
+                    <div class="footer-nav-wrap text-white">
+                        <div class="text-white fs-4 fw-bold font-family-2">Liên kết</div>
                         <ul class="list-unstyled footer-nav-list mt-3">
                             <li><a href="/iwedding" class="text-foot"><span class="ti-angle-double-right"></span> Website đám cưới</a></li>
                             <li><a href="/story/love-story" class="text-foot"><span class="ti-angle-double-right"></span> Chuyện tình yêu</a></li>
@@ -606,8 +591,8 @@ main:before {
                 </div>
 
                 <div class="col-lg-2 col-md-4 col-6">
-                    <div class="footer-nav-wrap text-black">
-                        <div class="text-black fs-4 fw-bold font-family-2">Về Biihappy</div>
+                    <div class="footer-nav-wrap text-white">
+                        <div class="text-white fs-4 fw-bold font-family-2">Về Biihappy</div>
                         <ul class="list-unstyled footer-nav-list mt-3">
                             <li><a href="/" class="text-foot"><span class="ti-angle-double-right"></span> Trang chủ</a></li>
                         <li><a href="/about-us" class="text-foot"><span class="ti-angle-double-right"></span> Giới thiệu về Biihappy</a></li>
@@ -658,25 +643,25 @@ main:before {
 			</div>
 			<div class="modal-body p-4" id="edit-guest-body">
 				<div class="row">
-										<div class="col-12 col-sm-4 col-lg-4">
+                    <div class="col-12 col-sm-4 col-lg-4">
 						<a class="text-secondary" href="/invitepro/new-design?template=64fbcef66e9b7f5516077108">
 							<img class="rounded border p-1" src="https://test.biihappy.com/static/theme/img/invitepro/tall_rectangle.jpg" alt="Tall Rectangle (10x20cm)" />
 							<div class="text-center mt-2 fw-bold">Tall Rectangle (10x20cm)</div>
 						</a>
 					</div>
-										<div class="col-12 col-sm-4 col-lg-4">
+                    <div class="col-12 col-sm-4 col-lg-4">
 						<a class="text-secondary" href="/invitepro/new-design?template=64fdd40499c1752e0d0a0769">
 							<img class="rounded border p-1" src="https://test.biihappy.com/static/theme/img/invitepro/low_rectangle.jpg" alt="Low Rectangle (12x17cm)" />
 							<div class="text-center mt-2 fw-bold">Low Rectangle (12x17cm)</div>
 						</a>
 					</div>
-										<div class="col-12 col-sm-4 col-lg-4">
+                    <div class="col-12 col-sm-4 col-lg-4">
 						<a class="text-secondary" href="/invitepro/new-design?template=64fbd85a03597b826c05b791">
 							<img class="rounded border p-1" src="https://test.biihappy.com/static/theme/img/invitepro/square.jpg" alt="Square (15x15cm)" />
 							<div class="text-center mt-2 fw-bold">Square (15x15cm)</div>
 						</a>
 					</div>
-									</div>
+                </div>
 			</div>
 		</div>
 	</div>
@@ -685,7 +670,8 @@ main:before {
 <div class="loading" style="display: none;">Loading…</div>
 
 <script src="https://test.biihappy.com/static/theme/js/libs.js?v=20230914"></script>
-<script src="https://test.biihappy.com/static/theme/js/scripts.js?v=20230913"></script><script src="https://test.biihappy.com/static/theme/js/invitepro.js?v=20231003"></script>
+<script src="https://test.biihappy.com/static/theme/js/scripts.js?v=20230913"></script>
+<script src="https://test.biihappy.com/static/theme/js/invitepro.js?v=20231003"></script>
 <script src="/assets/3b46bb6d/yii.js"></script>
 <script src="./bi-animation.js?=v5"></script>
 <script>jQuery(function ($) {

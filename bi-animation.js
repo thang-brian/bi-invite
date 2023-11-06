@@ -67,7 +67,9 @@ var AnimationModule = (function () {
   window.addEventListener("scroll", initialize);
   window.addEventListener("load", initialize);
   document.addEventListener("DOMContentLoaded", function () {
-    animateConfetti();
+    if (container) {
+      animateConfetti();
+    }
     setInterval(changeColor, 3000);
   });
   return { initialize: initialize };
