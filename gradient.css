@@ -55,10 +55,10 @@ body{
     border-radius: 26px 26px 26px 26px;
 }
 
-.c-pattern__item {
+/* .c-pattern__item {
     background-image: none !important;
     background-color: #39295D !important;
-}
+} */
 
 .c-pattern__item .btn-start {
     background-color: transparent !important;
