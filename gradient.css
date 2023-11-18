@@ -3,12 +3,50 @@
     --radial-gradient: at top left, #1DCFFC 0%, #7C39CC 80%;
     --revert-radial-gradient: at top left, #7C39CC 10%, #1DCFFC 100%;
     --main-font: 'Inter';
+    --e-global-color-primary: #FFFFFF;
+    --e-global-color-secondary: #AC01FF;
+    --e-global-color-text: #9AA0A7;
+    --e-global-color-accent: #1DCFFC;
+    --e-global-color-2b2b6b9: #1F232F;
+    --e-global-color-5b5a8c1: #313648;
+    --e-global-color-b034bb0: #222633;
+    --e-global-color-7d250bd: #3E454D;
+    --e-global-color-92bd292: #EDB60A;
 }
 
 body{
     background-color: #7C39CC;
     background-image: linear-gradient(var(--linear-gradient));
     font-family: var(--main-font) !important;
+}
+
+.nav-link:hover{ font-weight: bold; color: var(--e-global-color-primary) !important; }
+
+.bg-e-2b2b6b9{
+    background-color: var(--e-global-color-2b2b6b9) !important;
+}
+
+.c-people-box{
+    border-radius: 30px !important;
+    padding: 2px !important;
+    background-color: transparent;
+    background-image: radial-gradient(at top right, var(--e-global-color-5b5a8c1) 0%, var(--e-global-color-b034bb0) 100%);
+    box-shadow: 10px 10px 25px 0px #0E1015 !important;
+}
+
+.b-movie:hover .popup-movie { box-shadow: 2px 0px 19px 0px var(--e-global-color-secondary) !important; }
+
+.c-main-bg{
+    background-image: url(https://templatekit.jegtheme.com/madesign/wp-content/uploads/sites/303/2022/06/Dark_11-e1656489145530.jpg) !important;
+    background-position: 35% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.c-main-2-bg{
+    background-image: url(https://templatekit.jegtheme.com/madesign/wp-content/uploads/sites/303/2022/06/Dark_10-1.jpg);
+    background-position: 0px 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-font-custom{
@@ -34,14 +72,68 @@ body{
     -webkit-text-fill-color: transparent !important;
 }
 
-.btn-radial-gradient{
-    background-image: radial-gradient(var(--radial-gradient)) !important;
-    transition: all 0.3s ease-in-out;
-    transform: scale(1);
-    color: #fff !important;
+.c-background-overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: linear-gradient(180deg, #1F232FAB 0%, #1F232F 100%);
+    opacity: 1;
 }
-.btn-radial-gradient:hover{
-    background: radial-gradient(var(--revert-radial-gradient)) !important;
-    transform: scale(1.1);
-    opacity: 1 !important;
+.c-background-overlay-footer {
+    background-image: linear-gradient(180deg, var(--e-global-color-2b2b6b9) 0%, #1F232FAD 100%) !important;
+}
+
+
+.btn-gradient {
+    color: var(--e-global-color-primary);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    background-image: radial-gradient(at top right, var(--e-global-color-accent) 0%, var(--e-global-color-secondary) 100%);
+    box-shadow: 8px 8px 20px 0px #0E1015;
+    border-radius: 16px 16px 16px 16px;
+    padding: 15px 20px;
+
+}
+.btn-gradient:hover{
+    color: #FFFFFF;
+    background-color: transparent;
+    background-image: radial-gradient(at bottom left, var(--e-global-color-accent) 0%, var(--e-global-color-secondary) 100%);
+}
+
+.btn-outline-gradient {
+    background-color: transparent;
+    background-image: radial-gradient(at top right, var(--e-global-color-2b2b6b9) 0%, var(--e-global-color-2b2b6b9) 100%);
+    box-shadow: 0px 0px 0px 0px #000000;
+    border-radius: 16px 16px 16px 16px;
+    padding: 20px 25px 20px 25px;
+    color: var(--e-global-color-primary);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: all .3s;
+}
+
+.elementor-widget-container {
+    padding: 1px 1px 1px 1px;
+    background-color: transparent;
+    background-image: radial-gradient(at top right, var( --e-global-color-accent ) 0%, var( --e-global-color-secondary ) 100%);
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 7px 7px 15px 0px #060709;
+    transition: all .3s;
+}
+
+.elementor-widget-container:hover {
+    transform: scale(0.9);
+    background-image: radial-gradient(at top right, var( --e-global-color-secondary ) 0%, var( --e-global-color-accent ) 100%);
+}
+
+.btn-outline-gradient:hover {
+    color: var(--e-global-color-primary) !important;
 }
