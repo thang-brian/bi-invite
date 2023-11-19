@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="./custom-animate.css?v=5" />
 <link rel="stylesheet" href="./gradient.css?v=6" />
 <link rel="stylesheet" href="./balloon.css?v=4" />
-<link rel="stylesheet" href="./snake-animate.css?v=4" />
+<link rel="stylesheet" href="./snake-animate.css?v=5" />
 <link href="https://test.biihappy.com/invitepro" rel="canonical">
 <script>var biicore = {"baseURL":"https:\/\/test.biihappy.com","commonErrorMessage":"Lỗi không xác định, xin vui lòng tải lại trang và thử lại!","currentURL":"\/invitepro","isGuest":true,"message":{"cancelText":"Huỷ","confirmText":"Xác nhận","discardText":"Bỏ","keepEditText":"Tiếp tục chỉnh sửa","confirmUnsavedChanges":"Thay đổi chưa được lưu","confirmUnsavedChangesInfo":"Hệ thống sẽ không lưu những thay đổi của bạn.","confirmDeletePost":"Bạn thực sự muốn xoá bài viết này?","confirmDeletePostInfo":"Sau khi đã xoá, bài viết sẽ không thể khôi phục lại được. Vậy nên, xin vui lòng chắc chắn hành động của mình.","confirmReportPost":"Bạn thực sự muốn báo cáo về bài viết này?","confirmReportPostInfo":"Hãy báo cáo ngay cho Biihappy nếu bạn thấy nội dung của bài viết có vấn đề, nội dung không đúng với chính sách của Biihappy, không đúng với thuần phong mỹ tục, hoặc có thể là nội dung mang hàm ý tục tĩu, gây đã kích cho người khác,...","confirmDeleteStory":"Bạn thực sự muốn xoá câu chuyện này?","confirmDeleteStoryInfo":"Sau khi đã xoá, câu chuyện sẽ không thể khôi phục lại được. Vậy nên, xin vui lòng chắc chắn hành động của mình.","confirmReportStory":"Bạn thực sự muốn báo cáo về câu chuyện này?","confirmReportStoryInfo":"Hãy báo cáo ngay cho Biihappy nếu bạn thấy nội dung của câu chuyện có vấn đề, nội dung không đúng với chính sách của Biihappy, không đúng với thuần phong mỹ tục, hoặc có thể là nội dung mang hàm ý tục tĩu, gây đã kích cho người khác,...","confirmDeleteComment":"Bạn thực sự muốn xoá bình luận này này?","confirmDeleteCommentInfo":"Sau khi đã xoá, bình luận sẽ không thể khôi phục lại được. Vậy nên, xin vui lòng chắc chắn hành động của mình.","confirmChangeTemplate":"Bạn thực sự muốn đổi giao diện?","confirmChangeTemplateInfo":"Khi đổi giao diện mới, bạn phải cài đặt lại giao diện chứ không thể thừa kế thông tin cài đặt của giao diện cũ."}};</script><link rel="icon" sizes="any" href="https://test.biihappy.com/static/img/logo/favicon.ico" />
 <link rel="icon" type="image/svg+xml" href="https://test.biihappy.com/static/img/logo/favicon.svg" />
@@ -121,7 +121,7 @@
         
         <section class="c-people">
             <div class="row justify-content-center">
-                <div class="c-people-box">
+                <div class="c-invite-box">
                     <div class="c-people__container mw-100 w-100 bg-e-2b2b6b9">
                         <div class="section_title center">
                             <div class="section_title--mid main-font-custom dynamic-text">
@@ -180,7 +180,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="c-pattern__item big position-relative">
+                <div class="c-invite-box c-pattern__item big position-relative">
                     <div class="c-pattern__item--ctn">
                         <h5 class="c-pattern__item--ttl main-font-custom dynamic-text">
                             Thiệp cưới
@@ -206,7 +206,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="c-pattern__item sm01">
+                <div class="c-invite-box c-pattern__item sm01">
                     <div class="c-pattern__item--ctn">
                         <h5 class="c-pattern__item--ttl d-flex main-font-custom dynamic-text">
                             Thiệp sinh nhật
@@ -220,7 +220,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="c-pattern__item position-relative sm02">
+                <div class="c-invite-box c-pattern__item position-relative sm02">
                     <div class="c-pattern__item--ctn z-1">
                         <h5 class="c-pattern__item--ttl d-flex main-font-custom dynamic-text">
                             Thiệp thôi nôi
@@ -640,9 +640,10 @@
 <div class="loading" style="display: none;">Loading…</div>
 
 <script src="https://test.biihappy.com/static/theme/js/libs.js?v=20230914"></script>
-<script src="https://test.biihappy.com/static/theme/js/scripts.js?v=20230913"></script><script src="https://test.biihappy.com/static/theme/js/invitepro.js?v=20231024"></script>
+<script src="https://test.biihappy.com/static/theme/js/scripts.js?v=20230913"></script>
+<script src="https://test.biihappy.com/static/theme/js/invitepro.js?v=20231024"></script>
 <script src="/assets/5cc3c5fc/yii.js"></script>
-<script src="./bi-animation.js?=v7"></script>
+<script src="./bi-animation.js?=v10"></script>
 <script>jQuery(function ($) {
 
 $(document).on("click", ".btn-resend-verify-email", function(){ $(this).addClass("pe-none"); $(".loading").show(); $("form#resend-verify-email-form").submit(); });

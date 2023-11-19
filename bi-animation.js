@@ -58,11 +58,7 @@ var AnimationModule = (function () {
           steps.forEach(step => {
               step.classList.remove('arrived');
           });
-      } else {
-        steps[currentStepIndex].classList.add('arrived');
       }
-      steps[currentStepIndex].classList.add('arrived');
-      steps[currentStepIndex].classList.add('active');
   }
   window.addEventListener("scroll", initialize);
   window.addEventListener("load", initialize);
