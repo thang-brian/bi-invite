@@ -68,18 +68,6 @@ section .row{
     position: relative;
 }
 
-.c-pattern__item::before {
-    content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ mờ 50% */
-  z-index: 1; /* Đảm bảo lớp overlay nằm trên ảnh */
-  opacity: 0.3;
-}
-
 .c-pattern__item h5, .c-pattern__item p, .c-pattern__item a {
     position: relative;
     z-index: 2;
