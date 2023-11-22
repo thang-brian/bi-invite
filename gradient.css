@@ -48,7 +48,8 @@ body{
     box-shadow: 10px 10px 25px 0px #0E1015 !important;
 }
 
-.b-movie:hover .popup-movie { box-shadow: 2px 0px 19px 0px var(--e-global-color-secondary) !important; border-radius: 30px;}
+.b-movie:hover .popup-movie { box-shadow: 2px 0px 19px 0px var(--e-global-color-secondary) !important;}
+.b-movie a, .b-movie img { border-radius: 30px;}
 
 .c-main-bg{
     background-image: url(https://templatekit.jegtheme.com/madesign/wp-content/uploads/sites/303/2022/06/Dark_11-e1656489145530.jpg) !important;
