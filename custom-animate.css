@@ -1,3 +1,7 @@
+.br-16px { border-radius: 16px !important; }
+.p-5px { padding: 5px !important; }
+.br-0 { border-radius: 0 !important; }
+
 section.c-mv, section.c-mv:before {
     background: unset !important;
 }
@@ -51,11 +55,10 @@ section .row{
 .nav-item:hover:after{ bottom: 0; opacity: 1; }
 .nav-item.active:hover:after{ opacity: 0; }
 .nav-link:hover{ font-weight: bold;}
-/* .animate-hover-top:hover {transform: translateY(-15px);}
-.animate-hover-top {transition: all 0.3s ease-in-out;} */
 
 .c-card__description { -webkit-transform: translateY(35px); transform: translateY(35px); -webkit-transition: opacity 0.3s, -webkit-transform 0.3s; transition: opacity 0.3s, -webkit-transform 0.3s; transition: opacity 0.3s, transform 0.3s; transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s; -webkit-transition-delay: 0s; transition-delay: 0s; }
 .c-card-custom:hover .c-card__description { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); -webkit-transition-delay: 0.2s; transition-delay: 0.2s; }
+
 
 .top-c-mv__line { opacity: .03; left: -447px;}
 .c-mv__line { opacity: .2;}
@@ -161,4 +164,20 @@ bokeh { position: absolute; width: 10px; height: 10px; border-radius: 50%; anima
 
 @media only screen and (max-width: 991px) {
     .typewrite {height: 30px}
+}
+
+/* list category */
+
+.widget-categories ul li, .widget-recent-entries ul li, .widget-recent-entries-custom ul li {
+    border-color: #7c39cb!important;
+}
+
+.widget a {
+    color: #ffff !important;
+}
+
+/* detail */
+
+.content-widget p {
+    color: #ffff !important;
 }
