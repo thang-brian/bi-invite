@@ -1,6 +1,13 @@
 .br-16px { border-radius: 16px !important; }
 .p-5px { padding: 5px !important; }
 .br-0 { border-radius: 0 !important; }
+.w-fit { width: fit-content !important; }
+
+.bd-sidebar-toggle:not(.collapsed) .bi-expand { display: none; }
+.bd-sidebar-toggle .bi-collapse { display: none; }
+.bd-sidebar-toggle:not(.collapsed) .bi-collapse { display: inline-block; }
+
+.text-shadow-black-1 { text-shadow: 1px 1px 1px #000000; }
 
 section.c-mv, section.c-mv:before {
     background: unset !important;
@@ -162,9 +169,105 @@ bokeh { position: absolute; width: 10px; height: 10px; border-radius: 50%; anima
 .love-r path:nth-child(3) { animation-delay: 1s; }
 @keyframes heartbeat { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
 
-@media only screen and (max-width: 991px) {
-    .typewrite {height: 30px}
+.nav-user-icon:hover { opacity: 0.8; }
+.invitepro-main {
+    padding: 3rem 0;
 }
+@media only screen and (max-width: 991px) {
+    .invitepro-main { padding: 0; }
+    .typewrite {height: 30px}
+    .c-header { margin-bottom: auto; }
+    .c-mv { padding-top: 0px; }
+    .order-mb-area { display: flex; }
+    .order-mb-area .navbar-brand {order: 1;}
+    .order-mb-area .nav-user-icon {order: 2;}
+    .order-mb-area #navbarCollapse {order: 3;}
+}
+/* @media only screen and (max-width: 767px) {
+    .sidebar-left { display: none; }
+} */
+
+/* LP */
+
+@keyframes moveAnimation {
+    0%, 100% {
+        width: 50%;
+        height: 50%;
+    }
+    50% {
+        width: 751px;
+        height: 684px;
+    }
+}
+
+@keyframes moveAnimationReverse {
+    0%, 100% {
+        width: 751px;
+        height: 684px;
+    }
+    50% {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+.c-svg-heart-scale {
+    animation: moveAnimation 6s infinite;
+}
+.c-svg-heart-scale-2,
+.c-svg-heart-scale-3,
+.c-svg-heart-scale-4 {
+    animation: moveAnimationReverse 6s infinite;
+}
+
+.c-svg-heart-scale-2 { animation-delay: 0.5s; }
+
+.c-svg-heart-scale-3 { animation-delay: 1s; }
+
+.c-svg-heart-scale-4 { animation-delay: 1.5s; }
+
+@keyframes diagonalMoveAnimation {
+    0% {
+        transform: matrix(0.1475, -0.0219, 0.0219, 0.1475, 250, 80);
+    }
+    80% {
+        transform: matrix(0.1475, -0.0219, 0.0219, 0.1475, 92.5, 250);
+    }
+    100% {
+        transform: matrix(0, 0, 0, 0, 92.5, 250);
+        width: 0;
+    }
+}
+
+.c-svg-cross-move { animation: diagonalMoveAnimation 7s ease-in-out infinite alternate; }
+
+
+.animated-image {
+  animation: moveImage 4s ease-in-out infinite alternate; /* Đặt thời gian, kiểu easing và lặp lại */
+}
+
+@keyframes moveImage {
+  0% {
+    transform: matrix(0.48, 0, 0, 0.48, 570, 500);
+    opacity: 1;
+  }
+  100% {
+    transform: matrix(0.48, 0, 0, 0.48, 556.5, 460);
+    opacity: 0.75;
+  }
+}
+
+.animated-image-left-right { animation: moveImageLeftRight 7s ease-in-out infinite alternate; }
+  
+@keyframes moveImageLeftRight {
+    0%, 100% {
+        transform: matrix(0.48, 0, 0, 0.48, 251.5, -4);
+    }
+    50% {
+        transform: matrix(0.48, 0, 0, 0.48, 180, -4);
+    }
+}
+  
 
 /* list category */
 
